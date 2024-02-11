@@ -44,7 +44,7 @@ Make sure to follow our [code of conduct](https://github.com/your-username/Macro
 
 ## License
 
-MacroKeyboardProgram is open-source and released under the [MIT License](https://github.com/NekoSpirits/MacroKeyboardProgram/blob/main/LICENSE).
+MacroKeyboardProgram is open-source and released under the [GNU GENERAL PUBLIC LICENSE](https://github.com/NekoSpirits/MacroKeyboardProgram/blob/master/LICENSE).
 
 ## Contact
 
