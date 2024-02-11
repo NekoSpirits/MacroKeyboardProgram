@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>16E1CFC44E517BC3FBB9EED6FA8BFAAAF4A05900</ManifestCertificateThumbprint>
@@ -63,6 +63,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>macrokeyboard.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

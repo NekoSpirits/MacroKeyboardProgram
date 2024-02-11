@@ -33,7 +33,10 @@ namespace MacroKeyboardProgram
                 ofile.ShowDialog();
                 Properties.Settings.Default.Backgrounds = ofile.FileName;
                 Properties.Settings.Default.Save();
-                pictureBox1.Image = Image.FromFile(Properties.Settings.Default.Backgrounds);
+                if (ofile.FileName != "")
+                {
+                    pictureBox1.Image = Image.FromFile(Properties.Settings.Default.Backgrounds);
+                }
             }
             //percentage
             //pictureBox1.Size = Image.FromFile(Properties.Settings.Default.Backgrounds).Size;
@@ -64,6 +67,10 @@ namespace MacroKeyboardProgram
             if (Properties.Settings.Default.SizeX != 0 || Properties.Settings.Default.SizeY != 0)
             {
                 this.Size = new Size(Properties.Settings.Default.SizeX, Properties.Settings.Default.SizeY);
+                if (this.Size.Width <100 || this.Size.Height <100)
+                {
+                    this.Size = new Size(100, 100);
+                }
             }
         }
 
@@ -767,6 +774,11 @@ namespace MacroKeyboardProgram
             Properties.Settings.Default.SizeX = Size.Width;
             Properties.Settings.Default.SizeY = Size.Height;
             Properties.Settings.Default.Save();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
